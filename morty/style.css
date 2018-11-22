@@ -1,0 +1,275 @@
+:root {
+    --main-bg-color: #f7e9a0;
+    --hair-color: #a16124;
+    --skin-color: #fbd0b3;
+    --t-shirt-color: #eae376;
+}
+body {
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    margin: .5rem 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.main {
+    padding: 20px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.paper {
+    width: 50em;
+    height: 60em;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.morty {
+    width: 70%;
+    height: 80%;
+    position: relative;
+}
+
+.head {
+    width: 30em;
+    height: 30em;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.hair {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    border-radius: 50%/70px 90% 20% 90%;
+    transform: skew(-20deg, 13deg);
+    background-color: var(--hair-color);
+    border: 2px solid #000;
+}
+
+.face {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    border-radius: 50% 60% 50% 45%;
+    background-color: var(--skin-color);
+    border: 2px solid #000;
+}
+
+.eyebrow {
+    width: 10%;
+    height: 5%;
+    position: absolute;
+    top: 15%;
+    border: 2px solid #000;
+    border-color: #000 transparent transparent;
+}
+
+.eyebrow--left {
+    width: 10%;
+    height: 5%;
+    left: 8%;
+    transform: rotate(-15deg);
+    border-radius: 30%;
+}
+
+.eyebrow--right {
+    width: 22%;
+    top: 18%;
+    left: 40%;
+    transform: rotate(15deg);
+    border-radius: 40%;
+}
+
+.eye {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 25%;
+    left: -8%;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+.eye::before {
+    content: '';
+    width: 10%;
+    height: 10%;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: #000;
+    border-radius: 50%;
+    animation-name: i-see-you;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+.eye--right {
+    left: 30%;
+}
+
+.ear {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    right: -3%;
+    top: 53%;
+    border-radius: 50%;
+    border: 2px solid #000;
+    border-color: transparent #000 #000 transparent;
+    transform: rotate(-25deg);
+    background-color: var(--skin-color);
+}
+
+.nose {
+    width: 8%;
+    height: 7%;
+    position: absolute;
+    left: 16%;
+    top: 55%;
+    border-radius: 50% 0 0 50%;
+    border: 2px solid #000;
+    border-color: #000 transparent #000 #000;
+    transform: rotate(-25deg);
+}
+
+.lips {
+    width: 15%;
+    height: 14%;
+    position: absolute;
+    top: 70%;
+    left: 22%;
+}
+
+.lip {
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    border-radius: 80% 70%;
+    border: 2px solid #000;
+    border-color: transparent #000 #000 #000;
+    background-color: var(--skin-color);
+    transform: scaleX(.8);
+}
+
+.lip--right {
+    left: 35%;
+    top: 18%;
+}
+
+.lip--right::after {
+    content: '';
+    background-color: var(--skin-color);
+    width: 200%;
+    height: 80%;
+    position: absolute;
+    left: -40%;
+    top: -35%;
+}
+
+.body {
+    position: absolute;
+    top: 45%;
+    left: 18%;
+}
+
+.t-shirt {
+    width: 22em;
+    height: 40em;
+    border-radius: 45%;
+    border: 2px solid #000;
+    background-color: var(--t-shirt-color);
+}
+
+.t-shirt_line {
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    left: -3%;
+    border: 2px solid #000;
+    border-color: transparent #000 transparent transparent;
+    transform: rotate(-3deg);
+    border-top-right-radius: 14% 100px;
+    z-index: 1;
+}
+
+.t-shirt__sleeve--1 {
+    width: 20%;
+    height: 15%;
+    border: 2px solid #000;
+    border-color: transparent transparent #000 #000;
+    position: absolute;
+    top: 45%;
+    left: -1.5%;
+    transform: rotate(7deg);
+    background: -moz-linear-gradient(45deg, var(--t-shirt-color) 50%,  transparent 100%);
+    background: -webkit-linear-gradient(45deg, var(--t-shirt-color) 50%,  transparent 100%);
+    background: linear-gradient(45deg, var(--t-shirt-color) 50%,  transparent 100%);
+}
+
+.t-shirt__sleeve--2 {
+    width: 22%;
+    height: 15%;
+    border: 2px solid #000;
+    border-top-color: transparent;
+    border-bottom-left-radius: 10%;
+    position: absolute;
+    top: 45%;
+    right: -1%;
+    transform: rotate(-5deg);
+    background-color: var(--t-shirt-color);
+}
+
+.hand {
+    width: 16%;
+    height: 20%;
+    position: absolute;
+    top: 60%;
+    border: 2px solid #000;
+    border-right-color: transparent;
+    background-color: var(--skin-color);
+}
+
+.hand--1 {
+    right: 0;
+    border: 2px solid #000;
+}
+
+/* The animation code */
+@keyframes i-see-you {
+    0%   {
+        left: 20%;
+        top: 20%;
+    }
+    10%  {
+        top: 50%;
+        left: 50%;
+    }
+    20% {
+        left: 20%;
+        top: 20%;
+    }
+}
