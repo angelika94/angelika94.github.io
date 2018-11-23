@@ -225,9 +225,9 @@ h2 {
     top: 45%;
     left: -1.5%;
     transform: rotate(7deg);
-    background: -moz-linear-gradient(45deg, var(--t-shirt-color) 50%,  transparent 100%);
-    background: -webkit-linear-gradient(45deg, var(--t-shirt-color) 50%,  transparent 100%);
-    background: linear-gradient(45deg, var(--t-shirt-color) 50%,  transparent 100%);
+    -webkit-box-shadow: 8px -8px 0 0 var(--t-shirt-color) inset;
+    -moz-box-shadow: 8px -8px 0 0 var(--t-shirt-color)  inset;
+    box-shadow: 8px -8px 0 0 var(--t-shirt-color)  inset;
 }
 
 .t-shirt__sleeve--2 {
