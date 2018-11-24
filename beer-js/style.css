@@ -246,13 +246,3 @@ h2 {
     content: 'Kyiv';
 }
 
-
-.links {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-
-.links img {
-    height: 100px;
-}

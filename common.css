@@ -1,0 +1,10 @@
+.links {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.links img {
+    max-width: 60px;
+    max-height: 100px;
+}
