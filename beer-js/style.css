@@ -1,0 +1,258 @@
+:root {
+    --main-bg-color: #ffeb3b5e;
+    --beer-color-1: #e4c200;
+    --beer-color-2: #f5e300;
+    --glass-color: #bebfc1;
+    --foam-color: #eaebed;
+    --bubble-color: #f3f3f5;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: .5rem 0;
+    font-size: 1rem;
+}
+
+.main {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.glass {
+    position: relative;
+    height: 32.5em;
+}
+
+.glass__top {
+    width: 24.3em;
+    height: 8em;
+    background: var(--glass-color);
+    border-radius: 50%;
+}
+
+.glass__top-1 {
+    margin: auto;
+    width: 20.4em;
+    height: 7em;
+    background: var(--foam-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    right: 0;
+}
+
+.glass__side {
+    width: 1.7em;
+    height: 25em;
+    position: absolute;
+    top: 4em;
+    background: var(--glass-color);
+    z-index: 2;
+}
+
+.glass__side--left {
+    transform: rotate(-8deg);
+    left: 7.2%;
+}
+
+.glass__side--right {
+    transform: rotate(8deg);
+    right: 7.2%;
+}
+
+.glass__bottom {
+    margin: auto;
+    width: 17.47em;
+    height: 8.3em;
+    background: var(--glass-color);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.glass__beer {
+    margin: auto;
+    width: 18.4em;
+    height: 24.3em;
+    perspective: 24em;
+    border-radius: 50%;
+    position: absolute;
+    top: -5%;
+    left: 0;
+    right: 0;
+}
+
+.glass__beer:before {
+    transform: rotateX(162deg);
+    transform-origin: 50% 100%;
+    border-radius: 40% 40% 0 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    top: -9em;
+    background: linear-gradient(to bottom, var(--beer-color-1) 0%, var(--beer-color-2) 100%);
+}
+
+.glass__beer-head {
+    margin: auto;
+    width: 20.7em;
+    height: 23.3em;
+    perspective: 24em;
+    border-radius: 50%;
+    position: absolute;
+    top: -2%;
+    left: 0;
+    right: 0;
+}
+
+.glass__beer-head:before {
+    transform: rotateX(162deg);
+    transform-origin: 50% 100%;
+    border-radius: 40% 40% 0 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    top: -17em;
+    background: var(--foam-color);
+}
+
+.glass__wave-1 {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    position: absolute;
+    top: 37.8%;
+    left: 8%;
+    z-index: 1;
+    transform: rotate(11deg);
+    border-top: 2em solid var(--foam-color);
+}
+
+.glass__wave-2 {
+    width: 9em;
+    height: 8em;
+    border-radius: 100% 41%;
+    background-color: var(--foam-color);
+    position: absolute;
+    top: 27.4%;
+    left: 23.5%;
+    z-index: 1;
+}
+
+
+.glass__wave-3 {
+    width: 7em;
+    height: 4em;
+    border-radius: 70%;
+    position: absolute;
+    top: 38.8%;
+    left: 46%;
+    z-index: 1;
+    transform: rotate(-16deg);
+    border-top: 2em solid var(--foam-color);
+}
+
+.glass__wave-4 {
+    width: 7em;
+    height: 4em;
+    border-radius: 70%;
+    position: absolute;
+    top: 26.4%;
+    left: 63%;
+    z-index: 1;
+    transform: rotate(3deg);
+    border-bottom: 2em solid var(--foam-color);
+}
+
+.glass__bubble {
+    background-color: var(--bubble-color);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.glass__bubble-1 {
+    width: 4em;
+    height: 3em;
+    top: 52.5%;
+    left: 20%;
+    transform: rotate(-8deg);
+}
+
+.glass__bubble-2 {
+    width: 1.9em;
+    height: 1.8em;
+    top: 60%;
+    left: 27%;
+}
+
+.glass__label {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3em;
+    font-weight: bold;
+    user-select: none;
+}
+
+.glass__js {
+    display: block;
+    font-size: 9em;
+    line-height: .8;
+}
+
+.glass__city {
+    font-size: 2em;
+    letter-spacing: .2em;
+}
+
+#city {
+    display: none;
+}
+
+#city:not(:checked) ~ .glass__city::before {
+    content: 'Dnipro';
+}
+
+#city:checked ~ .glass__city::before {
+    content: 'Kyiv';
+}
+
+
+.links {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.links img {
+    height: 100px;
+}
