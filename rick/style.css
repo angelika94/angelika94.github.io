@@ -4,6 +4,9 @@
     --skin-color: #d7c9b7;
     --brow-color: var(--hair-color);
     --t-shirt-color: #80d8d6;
+    --border-width-default: .3em;
+    --border-width-thin: .2em;
+    --border-width-bold: .4em;
 }
 
 body {
@@ -39,6 +42,12 @@ a, a:visited {
     font-size: 10px;
 }
 
+@media (max-width: 600px) {
+    .main {
+        font-size: 8px;
+    }
+
+}
 .paper {
     width: 40em;
     height: 66.5em;
@@ -46,14 +55,14 @@ a, a:visited {
 }
 
 .head {
-    padding-top: 160px;
+    padding-top: 16em;
     position: relative;
     z-index: 2;
 }
 
 .strand {
     background-color: var(--hair-color);
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     position: absolute;
     border-right-color: transparent;
     border-top-color: transparent;
@@ -81,7 +90,7 @@ a, a:visited {
     bottom: 23%;
     left: 17%;
     transform: skew(-38deg) rotate(25deg);
-    border-bottom-width: 2px;
+    border-bottom-width: var(--border-width-thin);
 }
 
 .strand-4 {
@@ -89,7 +98,7 @@ a, a:visited {
     height: 10em;
     bottom: 35%;
     left: 17%;
-    border-bottom-width: 2px;
+    border-bottom-width: var(--border-width-thin);
     transform: skew(-37deg) rotate(37deg);
     border-right: transparent;
 }
@@ -116,8 +125,8 @@ a, a:visited {
     bottom: 46%;
     left: 40%;
     transform: skew(-48deg) rotate(131deg);
-    border-left-width: 2px;
-    border-bottom-width: 4px;
+    border-left-width: var(--border-width-thin);
+    border-bottom-width: var(--border-width-bold);
 }
 
 .strand-8 {
@@ -168,7 +177,7 @@ a, a:visited {
     border-top-right-radius: 59% 37%;
     border-bottom-left-radius: 40% 28%;
     border-bottom-right-radius: 55% 38%;
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     background-color: var(--skin-color);
     position: relative;
     z-index: 1;
@@ -179,7 +188,7 @@ a, a:visited {
     height: 2em;
     position: absolute;
     border-radius: 32% / 30px;
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     background-color: var(--brow-color);
     z-index: 2;
 }
@@ -207,7 +216,7 @@ a, a:visited {
     width: 8.5em;
     height: 8.5em;
     border-radius: 50% 47%;
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     background-color: #fff;
     position: absolute;
     top: 26%;
@@ -243,7 +252,7 @@ a, a:visited {
     width: 6em;
     height: 4em;
     position: absolute;
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     border-top-color: transparent;
     border-right-color: transparent;
     border-radius: 50% 47%;
@@ -271,7 +280,7 @@ a, a:visited {
     width: 5.5em;
     height: 5.5em;
     border-radius: 50%;
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     background: var(--skin-color);
     position: absolute;
 }
@@ -299,21 +308,21 @@ a, a:visited {
     position: absolute;
     top: 50%;
     left: 26%;
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     border-top-color: transparent;
     border-top-left-radius: 21% 30px;
     border-top-right-radius: 0% 20px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 75%;
     transform: skew(-10deg, 55deg) rotate(5deg);
-    border-right-width: 2px;
-    border-left-width: 2px;
+    border-right-width: var(--border-width-thin);
+    border-left-width: var(--border-width-thin);
 }
 
 .lip {
     width: 13em;
     height: 3em;
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -329,7 +338,7 @@ a, a:visited {
     width: 16em;
     height: 5em;
     border-radius: 50%;
-    border: 3px solid transparent;
+    border: var(--border-width-default) solid transparent;
     position: absolute;
 }
 
@@ -350,7 +359,7 @@ a, a:visited {
 .neck {
     width: 6em;
     height: 6em;
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     background-color: var(--skin-color);
     position: absolute;
     left: 40%;
@@ -372,7 +381,7 @@ a, a:visited {
     width: 19em;
     height: 12em;
     position: absolute;
-    border: 3px solid #000;
+    border: var(--border-width-default) solid #000;
     background-color: #fff;
 }
 
@@ -401,8 +410,8 @@ a, a:visited {
     width: 22em;
     height: 2.6em;
     position: absolute;
-    border-top: 2px solid #000;
-    border-left: 4px solid #000;
+    border-top: var(--border-width-thin) solid #000;
+    border-left: var(--border-width-bold) solid #000;
     top: 42%;
     left: -17%;
     transform: skew(42deg) rotate(-38deg);
@@ -412,8 +421,8 @@ a, a:visited {
     height: 19em;
     width: 2.7em;
     position: absolute;
-    border-bottom: 4px solid #000;
-    border-right: 2px solid #000;
+    border-bottom: var(--border-width-bold) solid #000;
+    border-right: var(--border-width-thin) solid #000;
     top: -4%;
     right: 27%;
     transform: skew(-44deg) rotate(-49deg);
@@ -423,7 +432,7 @@ a, a:visited {
     width: 7em;
     height: 19em;
     position: absolute;
-    border: 4px solid transparent;
+    border: var(--border-width-bold) solid transparent;
     border-left-color: #000;
     border-top-left-radius: 32% 110%;
     border-bottom-left-radius: 19% 45%;
@@ -434,7 +443,7 @@ a, a:visited {
 .t-shirt--left {
     left: 33%;
     top: -6%;
-    box-shadow: inset 60px 0 0 var(--t-shirt-color);
+    box-shadow: inset 6em 0 0 var(--t-shirt-color);
 }
 
 .t-shirt--right {
@@ -446,7 +455,7 @@ a, a:visited {
 .sleeve {
     width: 3em;
     height: 11em;
-    border-left: 3px solid #000;
+    border-left: var(--border-width-default) solid #000;
     position: absolute;
     z-index: 1;
 }
