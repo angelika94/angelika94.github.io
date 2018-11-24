@@ -3,6 +3,9 @@
     --hair-color: #a16124;
     --skin-color: #fbd0b3;
     --t-shirt-color: #eae376;
+    --border-width-default: .3em;
+    --border-width-thin: .2em;
+    --border-width-bold: .4em;
 }
 
 body {
