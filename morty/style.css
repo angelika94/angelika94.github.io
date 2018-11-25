@@ -183,7 +183,7 @@ h2 {
 }
 
 .lip--right {
-    left: 35%;
+    left: 27%;
     top: 18%;
 }
 
@@ -230,12 +230,13 @@ h2 {
     border: var(--border-width-thin) solid #000;
     border-color: transparent transparent #000 #000;
     position: absolute;
-    top: 45%;
+    top: 46%;
     left: -1.5%;
     transform: rotate(7deg);
     -webkit-box-shadow: 8px -8px 0 0 var(--t-shirt-color) inset;
     -moz-box-shadow: 8px -8px 0 0 var(--t-shirt-color)  inset;
     box-shadow: 8px -8px 0 0 var(--t-shirt-color)  inset;
+    z-index: 1;
 }
 
 .t-shirt__sleeve--2 {
@@ -245,10 +246,11 @@ h2 {
     border-top-color: transparent;
     border-bottom-left-radius: 10%;
     position: absolute;
-    top: 45%;
+    top: 46%;
     right: -1%;
     transform: rotate(-5deg);
     background-color: var(--t-shirt-color);
+    z-index: 1;
 }
 
 .hand {
