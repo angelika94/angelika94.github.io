@@ -15,7 +15,7 @@ body {
     align-items: center;
     background-color: var(--main-bg-color);
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 63%;
 }
 
 h1, h2 {
