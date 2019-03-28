@@ -39,12 +39,12 @@ a, a:visited {
 
 .main {
     margin-top: auto;
-    font-size: 10px;
+    font-size: 63%;
 }
 
 @media (max-width: 600px) {
     .main {
-        font-size: 8px;
+        font-size: 50%;
     }
 
 }
