@@ -17,6 +17,7 @@ body {
     font-family: sans-serif;
     height: 100vh;
     height: -webkit-fill-available;
+    max-height: -webkit-fill-available;
 }
 
 h1, h2 {
