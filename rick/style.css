@@ -9,13 +9,18 @@
     --border-width-bold: .4em;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--main-bg-color);
     font-family: sans-serif;
+    height: 100%;
+    overflow: hidden;
 }
 
 h1, h2 {
@@ -39,12 +44,12 @@ a, a:visited {
 
 .main {
     margin-top: auto;
-    font-size: 10px;
+    font-size: 63%;
 }
 
 @media (max-width: 600px) {
     .main {
-        font-size: 8px;
+        font-size: 50%;
     }
 
 }

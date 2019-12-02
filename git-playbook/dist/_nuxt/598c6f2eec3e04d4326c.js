@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{187:function(t,n,e){"use strict";e.r(n);var s={head:()=>({title:"Process Introduction"})},o=e(4),c=Object(o.a)(s,function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"content"},[this._v("\n  New Pages HowTo\n")])},[],!1,null,null,null);n.default=c.exports}}]);
