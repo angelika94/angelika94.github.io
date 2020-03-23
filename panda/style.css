@@ -33,9 +33,10 @@
 }
 
 html, body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   height: 100%;
+  font-family: sans-serif;
 }
 
 @keyframes rotating {
@@ -49,7 +50,7 @@ html, body {
     --red-position-start: 33.3%;
     --red-position-stop: 37.49%;
 
-    --orange-position-stop: 37.49%;
+    --orange-position-start: 37.49%;
     --orange-position-stop: 41.66%;
 
     --yellow-position-start: 41.66%;
@@ -60,20 +61,42 @@ html, body {
   }
 }
 
+h1, h2 {
+  margin: 1rem 0;
+  text-align: center;
+  color: #fff;
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: inherit;
+}
+
 .pic {
-	width: 300px;
-	opacity: 0.4;
-	position: fixed;
-	top: 0;
-	left: 50%;
+  width: 300px;
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  left: 50%;
   z-index: 1;
 }
 
 .picture {
-	width: 100%;
+  width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   overflow: hidden;
   animation: rotating 15s linear infinite;
@@ -89,8 +112,16 @@ html, body {
   );
 }
 
+.header {
+  color: white;
+}
+
+h1 {
+  font-size: 20px;
+}
+
 .panda {
-  flex: 1;
+  width: 100%;
   height: 18rem;
   position: relative;
   overflow: hidden;
