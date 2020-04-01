@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catch the coin</title>
+  <meta name="description" content="Catch the coin game built with HTML5, CSS and TypeScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="game">
+    <div class="welcome-screen">
+      <h1>Catch the coin</h1>
+      <button id="start">START</button>
+    </div>
+    <div class="final-screen">
+      <img src="https://static.thenounproject.com/png/495400-200.png" alt="">
+      <h2 class="final-result"></h2>
+      <button id="reset">Try again</button>
+    </div>
+    <div class="score"></div>
+    <div id="panda"></div>
+  </div>
+  <script type="module" src="./build/game.js"></script>
+</body>
+</html>

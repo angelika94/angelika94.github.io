@@ -103,12 +103,12 @@ a {
   background-color: var(--green-color);
   background-image: repeating-conic-gradient(
     from 0deg at 50% 100%,
-    var(--blue-color) var(--blue-position-start)   var(--blue-position-stop),
+    var(--blue-color)   var(--blue-position-start)   var(--blue-position-stop),
     var(--purple-color) var(--purple-position-start) var(--purple-position-stop),
-    var(--red-color) var(--red-position-start)    var(--red-position-stop),
+    var(--red-color)    var(--red-position-start)    var(--red-position-stop),
     var(--orange-color) var(--orange-position-start) var(--orange-position-stop),
     var(--yellow-color) var(--yellow-position-start) var(--yellow-position-stop),
-    var(--green-color) var(--green-position-start)  var(--green-position-stop)
+    var(--green-color)  var(--green-position-start)  var(--green-position-stop)
   );
 }
 

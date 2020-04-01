@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+    cursor: none;
+}
+
+#start {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#panda {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+#panda::before {
+    content: '';
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    /*background-image: url(https://webstockreview.net/images/house-outline-png-3.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#panda::after {
+    content: '';
+    height: 50px;
+    width: 45px;
+    background-image: url(https://toppng.com/public/uploads/preview/in-by-boobah-holmes-on-chrissys-panda-bears-board-molde-de-oso-panda-11562896397ddupjfyf1w.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    z-index: 1;
+}
+
+.coin {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(https://www.bitpanda.com/assets/imgs/asset-best.svg);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyafx5xpCASm0R4vItLcjyOdrqgA5rBVNqWN46z2z9fpaVyp9q);
+    background-image: url(https://opengameart.org/sites/default/files/coin_0.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.virus {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(https://www.bitpanda.com/assets/imgs/asset-best.svg);
+    background-image: url(https://freesvg.org/img/Virus.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.welcome-screen, .final-screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    background-image: url(https://media.istockphoto.com/vectors/seamless-vector-pattern-panda-bear-pattern-on-light-pink-rose-small-vector-id982227400?k=6&m=982227400&s=170667a&w=0&h=hIdaeZlVKVF-PT7DrV7H24__YlLBkR0bD9PJMXxz19c=);
+}
+
+.final-screen {
+    background: #eee;
+    display: none;
+}
+
+h1, h2 {
+    padding: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #fff;
+}
+
+#start, #reset {
+    border: none;
+    background-color: #fff;
+    padding: 30px;
+    font-size: 2rem;
+}
