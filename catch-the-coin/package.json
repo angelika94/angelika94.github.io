@@ -1,0 +1,17 @@
+{
+  "name": "catch",
+  "version": "1.0.0",
+  "description": "Basic catching game built with HTML5, CSS and TypeScript",
+  "main": "",
+  "scripts": {
+    "start": "tsc && serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "coin",
+    "catch"
+  ],
+  "author": "Anzhelika Kirichuk @angelika94",
+  "license": "MIT",
+  "dependencies": {}
+}

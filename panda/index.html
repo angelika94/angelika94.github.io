@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Panda by Anzhelika Kirichuk</title>
+    <link rel="stylesheet" href="../reset-v2.0.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../common.css">
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129645116-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129645116-1');
+    </script>
+</head>
+<body>
+	<div class="links">
+		<a href="https://angelika94.github.io/beer-js/index"><img src="../beerjs.png" alt="beer js"></a>
+		<a href="https://angelika94.github.io/rick/index"><img src="../rick.png" alt="Rick"></a>
+		<a href="https://angelika94.github.io/morty/index"><img src="../morty.png" alt="Morty"></a>
+	</div>
+	<div class="picture">
+		<div class="header">
+			<h1 class="title">
+				CSS Panda
+			</h1>
+			<h2>CSS Radial gradient  + CSS Houdini (Properties API)</h2>
+			<h2>developer: <a href="https://www.linkedin.com/in/anzhelika-kirichuk-18892558/">Anzhelika Kirichuk</a></h2>
+			<h2>designer: <a href="https://juliarathmayr.com/">Julia Rathmayr</a></h2>
+		</div>
+		<div class="panda">
+			<div class="head">
+				<div class="ear ear--left"></div>
+				<div class="ear ear--right"></div>
+				<div class="face">
+					<div class="eye eye--left"></div>
+					<div class="eye eye--right"></div>
+					<div class="nose"></div>
+					<div class="mouth"></div>
+				</div>
+			</div>
+			<ul class="neck">
+				<li class="neck-item neck-item--1"></li>
+				<li class="neck-item neck-item--2"></li>
+				<li class="neck-item neck-item--3"></li>
+				<li class="neck-item neck-item--4"></li>
+				<li class="neck-item neck-item--5"></li>
+				<li class="neck-item neck-item--6"></li>
+				<li class="neck-item neck-item--7"></li>
+				<li class="neck-item neck-item--8"></li>
+				<li class="neck-item neck-item--9"></li>
+				<li class="neck-item neck-item--10"></li>
+				<li class="neck-item neck-item--11"></li>
+				<li class="neck-item neck-item--12"></li>
+				<li class="neck-item neck-item--13"></li>
+				<li class="neck-item neck-item--14"></li>
+				<li class="neck-item neck-item--15"></li>
+				<li class="neck-item neck-item--16"></li>
+				<li class="neck-item neck-item--17"></li>
+				<li class="neck-item neck-item--18"></li>
+				<li class="neck-item neck-item--19"></li>
+				<li class="neck-item neck-item--20"></li>
+				<li class="neck-item neck-item--21"></li>
+				<li class="neck-item neck-item--22"></li>
+				<li class="neck-item neck-item--23"></li>
+			</ul>
+			<div class="body">
+				<div class="hands">
+					<div class="belly"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		const cssVariables = [
+			'--blue-position-start',
+			'--blue-position-stop',
+
+			'--purple-position-start',
+			'--purple-position-stop',
+
+			'--red-position-start',
+			'--red-position-stop',
+
+			'--orange-position-start',
+			'--orange-position-stop',
+
+			'--yellow-position-start',
+			'--yellow-position-stop',
+
+			'--green-position-start',
+			'--green-position-stop',
+		];
+
+		for (let i = 0; i < cssVariables.length; i++) {
+			CSS.registerProperty({
+				name: cssVariables[i], 
+				syntax: '<length-percentage>', 
+				initialValue: '0%', 
+				inherits: true
+			});
+		}
+	</script>
+</body>
+</html>
